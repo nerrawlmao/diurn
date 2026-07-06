@@ -193,7 +193,7 @@ export function LandingPage() {
                         <div className="lp-rating">
                           <span className="lp-rating-label">How was your day?</span>
                           <span className="lp-rating-stars">
-                            ★★★★<span className="lp-star-empty">☆</span>
+                            ★<span className="lp-star-empty">☆☆☆☆</span>
                           </span>
                         </div>
                         <span className="lp-seal-btn">Seal this entry</span>
