@@ -1,9 +1,12 @@
 # Diurn
 
-A quiet place for your days. Diurn is a private, calendar-first online diary:
-pick a day, write what happened, rate it, attach photos, and seal it. Sealed
-entries can never be edited or deleted — by design, and enforced by the
+A private online diary for writing and keeping your days.
+Pick a date, write what happened, add photos, rate your day, and seal it.
+
+Sealed entries can never be edited or deleted — by design, and enforced by the
 database.
+
+![Diurn landing page](docs/preview.png)
 
 ## Stack
 
@@ -108,3 +111,7 @@ src/
     ConfigNotice.tsx         Shown when env vars are missing
     icons.tsx                Inline SVG icons
 ```
+
+## License
+
+© 2026 Diurn. All rights reserved.
