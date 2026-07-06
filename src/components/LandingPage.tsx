@@ -69,7 +69,7 @@ function Reveal({ children, delay = 0 }: { children: ReactNode; delay?: number }
 
 export function LandingPage() {
   const [authOpen, setAuthOpen] = useState(false)
-  const { typed, done } = useTypewriter(SAMPLE_TEXT, 1100, 32)
+  const { typed } = useTypewriter(SAMPLE_TEXT, 1100, 32)
 
   return (
     <div className="landing">
@@ -187,7 +187,7 @@ export function LandingPage() {
                       <span className="lp-caret" aria-hidden="true" />
                     </p>
 
-                    <div className={`lp-entry-after${done ? ' is-visible' : ''}`}>
+                    <div className="lp-entry-after is-visible">
                       <span className="lp-attach">+ Attach photos</span>
                       <div className="lp-form-footer">
                         <div className="lp-rating">

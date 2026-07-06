@@ -1124,7 +1124,8 @@ img {
   font-weight: 600;
   letter-spacing: 0.5em;
   padding-left: 0.5em; /* offset the trailing letter-spacing gap */
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums; /* even digit widths, plain zero */
 }
 
 
