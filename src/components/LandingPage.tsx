@@ -234,7 +234,9 @@ export function LandingPage() {
       <footer className="lp-footer">
         <a
           className="lp-footer-github"
-          href="#"
+          href="https://github.com/nerrawlmao/diurn"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="View Diurn on GitHub"
         >
           <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
