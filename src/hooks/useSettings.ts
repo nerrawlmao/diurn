@@ -64,9 +64,9 @@ export const SIZE_OPTIONS: Array<{ id: FontSizeId; label: string }> = [
 ]
 
 const DEFAULTS: Settings = {
-  theme: 'white',
+  theme: 'system',
   mode: 'light',
-  font: 'slab',
+  font: 'system',
   fontSize: 'medium',
 }
 const STORAGE_KEY = 'diurn-settings'
