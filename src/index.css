@@ -1121,6 +1121,7 @@ img {
 .auth-code-input {
   text-align: center;
   font-size: 1.5rem;
+  font-weight: 600;
   letter-spacing: 0.5em;
   padding-left: 0.5em; /* offset the trailing letter-spacing gap */
   font-family: var(--font-mono);
@@ -1585,6 +1586,14 @@ img {
   color: var(--accent);
 }
 
+/* The color control is the rightmost toolbar item, so its menu opens
+   leftward (anchored to the right) to stay on-screen. The size menu is
+   left unchanged. */
+.color-menu {
+  left: auto;
+  right: 0;
+}
+
 .color-basics-row {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -2024,9 +2033,27 @@ img {
     text-align: center;
   }
 
-  /* Rich editor toolbar: let controls wrap comfortably */
+  /* Rich editor toolbar: keep everything on one row, compacting the
+     controls so they fit (no overflow — that would clip the menus). */
   .editor-toolbar {
-    row-gap: 0.4rem;
+    flex-wrap: nowrap;
+    gap: 0.15rem;
+  }
+  .format-button {
+    /* aspect-ratio keeps the button square even when flex shrinks its
+       width to fit — height follows width instead of staying tall. */
+    min-width: 0;
+    width: 1.7rem;
+    height: auto;
+    aspect-ratio: 1;
+    padding: 0;
+  }
+  .format-dropdown {
+    margin-left: 0.15rem;
+  }
+  .format-trigger {
+    padding: 0 0.35rem;
+    font-size: 0.7rem;
   }
 
   /* Dialogs & auth card */

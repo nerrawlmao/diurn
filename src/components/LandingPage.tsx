@@ -9,7 +9,7 @@ const PREVIEW_LEADING_BLANKS = 3
 const PREVIEW_DAYS = 31
 
 const SAMPLE_TEXT =
-  'Had coffee with Mia after work. We talked for two hours and lost track of time. A really good day.'
+  'Today I doomscrolled, played games, and did nothing I actually planned to do. I feel disappointed in myself. I really need to change.'
 
 // A static month used purely for the preview illustration.
 // "Today" is the 21st: it's the day being written, and days after it
