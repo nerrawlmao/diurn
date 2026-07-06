@@ -2024,29 +2024,28 @@ img {
     text-align: center;
   }
 
-  /* Rich editor toolbar: keep everything on one row, compacted;
-     scroll horizontally only if the screen is extremely narrow. */
+  /* Rich editor toolbar: keep everything on one row by compacting the
+     controls (no overflow — that would clip the dropdown menus). */
   .editor-toolbar {
     flex-wrap: nowrap;
     gap: 0.1rem;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-  .editor-toolbar::-webkit-scrollbar {
-    display: none;
   }
   .format-button {
     min-width: 1.6rem;
     padding: 0 0.2rem;
-    flex-shrink: 0;
+    border-radius: 4px; /* squarer so the active highlight reads as a box */
   }
   .format-dropdown {
     margin-left: 0.2rem;
-    flex-shrink: 0;
   }
   .format-trigger {
     padding: 0 0.4rem;
     font-size: 0.72rem;
+  }
+  /* Anchor menus to the right so they stay on-screen near the toolbar edge. */
+  .format-menu {
+    left: auto;
+    right: 0;
   }
 
   /* Dialogs & auth card */
