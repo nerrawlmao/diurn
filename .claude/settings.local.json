@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm *)",
+      "Bash(npm run *)",
+      "Bash(curl -s 'https://meuxqcwowicckdydtlvp.supabase.co/rest/v1/entries?select=image_paths&limit=1' -H 'apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ldXhxY3dvd2ljY2tkeWR0bHZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMyMjg2NTYsImV4cCI6MjA5ODgwNDY1Nn0.o_vjAAfaVxvdv433DQAyTMwqfT0EQfsm1TIbbAqM8-I' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ldXhxY3dvd2ljY2tkeWR0bHZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMyMjg2NTYsImV4cCI6MjA5ODgwNDY1Nn0.o_vjAAfaVxvdv433DQAyTMwqfT0EQfsm1TIbbAqM8-I')",
+      "Bash(echo)",
+      "Bash(curl -s 'https://meuxqcwowicckdydtlvp.supabase.co/rest/v1/entries?select=image_path&limit=1' -H 'apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ldXhxY3dvd2ljY2tkeWR0bHZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMyMjg2NTYsImV4cCI6MjA5ODgwNDY1Nn0.o_vjAAfaVxvdv433DQAyTMwqfT0EQfsm1TIbbAqM8-I' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ldXhxY3dvd2ljY2tkeWR0bHZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMyMjg2NTYsImV4cCI6MjA5ODgwNDY1Nn0.o_vjAAfaVxvdv433DQAyTMwqfT0EQfsm1TIbbAqM8-I')",
+      "Bash(curl -s 'https://meuxqcwowicckdydtlvp.supabase.co/rest/v1/entries?select=title&limit=1' -H 'apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ldXhxY3dvd2ljY2tkeWR0bHZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMyMjg2NTYsImV4cCI6MjA5ODgwNDY1Nn0.o_vjAAfaVxvdv433DQAyTMwqfT0EQfsm1TIbbAqM8-I' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ldXhxY3dvd2ljY2tkeWR0bHZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMyMjg2NTYsImV4cCI6MjA5ODgwNDY1Nn0.o_vjAAfaVxvdv433DQAyTMwqfT0EQfsm1TIbbAqM8-I')",
+      "PowerShell(Set-Content *)"
+    ]
+  }
+}

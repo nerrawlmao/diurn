@@ -1,0 +1,49 @@
+<!--
+  Diurn — "Confirm signup" email template.
+  Paste into Supabase → Authentication → Email Templates → Confirm signup
+  → Message body (HTML). Uses the {{ .ConfirmationURL }} variable.
+-->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+  style="margin:0;padding:32px 12px;background:#faf6ee;">
+  <tr>
+    <td align="center">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+        style="max-width:480px;background:#fffdf8;border:1px solid #e8dfc9;border-radius:16px;">
+        <tr>
+          <td align="center" style="padding:40px 40px 24px;text-align:center;">
+            <h1 style="margin:0 0 14px;font-family:Georgia,'Times New Roman',serif;font-weight:normal;font-style:italic;font-size:26px;color:#2b251b;">
+              Welcome to <span style="font-size:32px;">Diurn</span>
+            </h1>
+            <p style="margin:0 0 26px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.7;color:#6e6553;">
+              Confirm your email to start writing.
+            </p>
+            <table role="presentation" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;">
+              <tr>
+                <td style="border-radius:999px;background:#b3873a;">
+                  <a href="{{ .ConfirmationURL }}"
+                    style="display:inline-block;padding:14px 34px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;color:#fff9ec;text-decoration:none;border-radius:999px;">
+                    Confirm my email
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <p style="margin:26px 0 0;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.6;color:#a49879;">
+              If the button doesn&rsquo;t work, copy and paste this link:
+              <br />
+              <a href="{{ .ConfirmationURL }}" style="color:#997028;word-break:break-all;">{{ .ConfirmationURL }}</a>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding:24px 40px 36px;text-align:center;">
+            <div style="border-top:1px solid #f1ebdc;margin:0 0 16px;"></div>
+            <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.6;color:#a49879;">
+              If you didn&rsquo;t create a Diurn account, you can safely ignore
+              this email.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
