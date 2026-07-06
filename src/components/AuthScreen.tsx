@@ -78,8 +78,7 @@ export function AuthCard() {
   async function handleCodeSubmit(event: FormEvent) {
     event.preventDefault()
     const token = code.trim()
-    // Supabase's OTP length is configurable (6–8+); accept whatever fits.
-    if (token.length < 6) return
+    if (token.length !== 6) return
 
     setStatus('verifying')
     setErrorMessage('')
@@ -138,10 +137,10 @@ export function AuthCard() {
               className="text-input auth-code-input"
               inputMode="numeric"
               autoComplete="one-time-code"
-              maxLength={8}
+              maxLength={6}
               value={code}
               onChange={(e) =>
-                setCode(e.target.value.replace(/\D/g, '').slice(0, 8))
+                setCode(e.target.value.replace(/\D/g, '').slice(0, 6))
               }
               disabled={status === 'verifying'}
               autoFocus
@@ -150,7 +149,7 @@ export function AuthCard() {
           <button
             type="submit"
             className="button-primary"
-            disabled={status === 'verifying' || code.length < 6}
+            disabled={status === 'verifying' || code.length !== 6}
           >
             {status === 'verifying' ? 'Verifying…' : 'Continue'}
           </button>
