@@ -114,4 +114,4 @@ src/
 
 ## License
 
-© 2026 Diurn. All rights reserved.
+Released under the [MIT License](LICENSE). © 2026 Diurn.
